@@ -1,0 +1,224 @@
+*{box-sizing: border-box;}
+nav{
+	background: white;
+}
+.ham{
+	display: none;
+}
+.nav{
+	position: relative;
+	left: 150px;
+	padding-left: 50px;
+	color: dimgrey;
+	cursor: pointer;
+	}
+#request{
+	position: absolute;
+	left: 1100px;
+	top: 30px;
+	background-color: ;
+}
+input{
+	width: 150px;
+	height: 40px;
+	border-radius: 30px;
+	cursor: pointer;
+	border-style: hidden;
+	color: white;
+	background: linear-gradient(45deg,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+ul{
+	display: none;
+}
+content{
+	position: relative;
+	left: 150px;
+	top: 60px;
+}
+.ground{
+	background-color: hsl(0, 0%, 98%);
+}
+#back{
+	position: absolute;
+	left: 920px;
+	top: 50px;
+}
+#front{
+	position: absolute;
+	left: 920px;
+	top: 85px;
+	z-index: 2;
+}
+.grid-container{
+	display: grid;
+	grid-template-areas: "header header header header"
+	"main side fast open";
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-left: 50px;
+	position: relative;
+	top: 150px;
+	background-color: hsl(0, 0%, 96%);
+}
+.header{
+	grid-area: header;
+}
+.grid-container1{
+	display: grid;
+	grid-template-areas: "late late late late"
+	"go went gone goes";
+	position: relative;
+	top: 200px;
+	left: 50px;
+	grid-gap: 0;
+}
+.late{
+	grid-area: late;
+}
+p ,h5{
+	color: dimgrey;
+}
+footer{
+	margin-top: 300px;
+	margin-bottom: 0;
+	height: 150px;
+	background-color: hsl(233, 26%, 24%);
+}
+.foo{
+	position: relative;
+	left: 500px;
+	top: -40px;
+	color: white;
+}
+.hee{
+	position: relative;
+	left: 700px;
+	top: -110px;
+	color: white;
+}
+dd:hover{
+	color: hsl(136, 65%, 51%);
+}
+.third{
+	position: relative;
+	left: 980px;
+	top: -180px;
+}
+.social{
+	position: relative;
+	top: 20px;
+	left: 50px;
+	padding-left: 10px;
+}.pic{
+	padding: 20px;
+	padding-left: 50px;
+}
+#pic{
+	filter: brightness(10.0);
+}
+h3:hover{
+	color: hsl(192, 70%, 51%);
+	width: 220px;
+}
+.nav:hover{
+	color: hsl(192, 70%, 51%);
+}
+.twitter:hover{
+	filter: opacity(70%) drop-shadow(0 0 0 hsl(136, 65%, 51%) );
+}
+.instagram:hover{
+	filter: opacity(70%) drop-shadow(0 0 0 hsl(136, 65%, 51%) );
+}
+.pinterest:hover{
+	filter: opacity(40%) drop-shadow(0 0 0 hsl(136, 65%, 51%) );
+}
+.facebook:hover{
+	filter: opacity(40%) drop-shadow(0 0 0 hsl(136, 65%, 51%));
+}
+.youtube:hover{
+	filter: opacity(40%) drop-shadow(0 0 0 hsl(136, 65%, 51%));
+}
+@media (min-width: 480px) and (max-width: 600px){
+	.nav{
+		display: none;
+	}
+	#request{
+		display: none;
+	}
+	.ham{
+		display: block;
+		position: relative;
+		left: 400px;
+		top: -40px;
+	}
+	#back{
+		position: relative;
+		left:150px ;
+		top: -190px;
+		width: 200px;
+	}
+	#front{
+		position: absolute;
+		left:150px ;
+		top: 70px;
+		z-index: 2;
+		width: 200px;
+	}
+	content{
+		position: relative;
+		top: 250px;
+		left: 30px;
+	}
+	footer{
+		background-color: hsl(233, 26%, 24%);
+		height: 350px;
+		padding-top: 20px;
+		cursor: pointer;
+	}
+	.grid-container{
+		display: contents;
+	}
+	.grid-container1{
+		display: contents;
+		margin-left: 40px;
+	}
+	span{
+		position: relative;
+		top: 100px;
+	}
+	.late{
+		position: relative;
+		top: 90px;
+	}
+	.hee, .foo ,.third{
+		position: relative;
+		left: 50px;
+		padding: 20px;
+	}
+	.third{
+		position: relative;
+		top: 10px;
+	}
+	.social{
+		position: relative;
+		top: 150px;
+		left: 80px;
+	}
+	.hee{
+	position: relative;
+	top: -50px;
+	}
+	ul{
+		position: relative;
+		left: 370px;
+		color: white;
+		width: 100px;
+		border: 2px dashed;
+		cursor: pointer;
+		background-color: hsl(136, 65%, 51%);
+	}
+	li:hover{
+		color:hsl(192, 70%, 51%);
+		filter: brightness(5.0);
+	}
+}
